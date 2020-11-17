@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Форма зворотнього зв'язку</h1>
+    <form id="form">
+        <input type="hidden" name="project_name" value="My Site">
+		<input type="hidden" name="admin_email" value="ambroziak0424@gmail.com">
+		<input type="hidden" name="form_subject" value="Form">
+        
+        <input type="email" id="email" name="email" placeholder="email" class="form-control"><br>
+        <input type="text" id="name" name="name" placeholder="name" class="form-control"><br>
+        <textarea id="message" name="message" placeholder="message" class="form-control"></textarea><br>
+        <button type="submit" id="sendMessage" class="btn btn-success">Надіслати</button>
+    </form>
+    <div id="error"></div>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
